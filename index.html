@@ -15,9 +15,11 @@
     <h1 class="text-[#111111] text-4xl font-bold mb-7">AI Universe Hub</h1>
     <button class="btn bg-[#EB5757] text-[#FFFFFF] rounded-2xl text-xl font-bold px-7">Sort By Date</button>
   </header>
-  <section class="container mx-auto px-4 mt-12 grid grid-cols-3">
-    <div class="card bg-base-100 shadow-xl p-5">
-      <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+  <section id="tools-container" class="container mx-auto px-4 mt-12 grid grid-cols-3 gap-5">
+    <!-- <div class="card bg-base-100 shadow-xl p-5 border-2">
+      <div class="min-w-[800px]">
+        <img class="rounded-2xl" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+      </div>
       <div class="">
         <h2 class="my-3 text-2xl font-bold text-[#111111]">Features</h2>
         <div class="mb-4 pl-4">
@@ -41,9 +43,13 @@
             </div>
         </div>
       </div>
-    </div>
+    </div> -->
+    
   </section>
-  
+  <div id="see-all" class="text-center my-10">
+    <button onclick="handleSeeAll()" class="btn px-8 text-[#FFFFFF] text-xl font-semibold rounded-2xl bg-[#EB5757]">See More</button>
+ </div>
+  <script src="js/ai.js"></script>
 </body>
 
 </html>
