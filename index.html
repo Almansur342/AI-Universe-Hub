@@ -15,40 +15,25 @@
     <h1 class="text-[#111111] text-4xl font-bold mb-7">AI Universe Hub</h1>
     <button class="btn bg-[#EB5757] text-[#FFFFFF] rounded-2xl text-xl font-bold px-7">Sort By Date</button>
   </header>
+
   <section id="tools-container" class="container mx-auto px-4 mt-12 grid grid-cols-3 gap-5">
-    <!-- <div class="card bg-base-100 shadow-xl p-5 border-2">
-      <div class="min-w-[800px]">
-        <img class="rounded-2xl" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
-      </div>
-      <div class="">
-        <h2 class="my-3 text-2xl font-bold text-[#111111]">Features</h2>
-        <div class="mb-4 pl-4">
-          <ol class="list-decimal">
-            <li>Natural language processing</li>
-            <li>Contextual understanding</li>
-            <li>Text generation</li>
-          </ol>
-        </div>
-        <hr>
-        <div class="flex justify-between mt-4 items-center">
-            <div>
-                <h1 class="text-2xl font-bold text-[#111111] mb-3">ChatGPT</h1>
-                 <div class="flex gap-2">
-                    <img src="images/Frame (1).svg" alt="">
-                    <p>11/01/2022</p>
-                 </div>
-            </div>
-            <div>
-               <button class="btn rounded-full bg-[#FEF7F7] text-[#EB5757]"><span><img src="images/icon.svg" alt=""></span></button>
-            </div>
-        </div>
-      </div>
-    </div> -->
-    
   </section>
+
   <div id="see-all" class="text-center my-10">
-    <button onclick="handleSeeAll()" class="btn px-8 text-[#FFFFFF] text-xl font-semibold rounded-2xl bg-[#EB5757]">See More</button>
+    <button id="see-more" onclick="handleSeeAll()" class="btn px-8 text-[#FFFFFF] text-xl font-semibold rounded-2xl bg-[#EB5757]">See More</button>
  </div>
+  <!-- You can open the modal using ID.showModal() method -->
+
+<dialog id="show_details_modal" class="">
+  <div class="">
+    <form method="">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <section id="showAiDetailsModal" class="container mx-auto px-40 flex my-28 gap-6 ">
+    </section>
+  </div>
+</dialog>
+
   <script src="js/ai.js"></script>
 </body>
 
